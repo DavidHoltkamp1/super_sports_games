@@ -1,3 +1,5 @@
+require_relative 'standard_deviation'
+
 class Event
 attr_reader :name, :ages
 
@@ -5,12 +7,20 @@ attr_reader :name, :ages
     @name = name
     @ages = ages
   end
-
   def max_age
     @ages.max
-    require "pry"; binding.pry
   end
 
-  p max_age
+  def min_age
+    @ages.min
+  end
+
+  def average_age
+    @ages.sum.to_f / @ages.length
+  end
+
+  
+
+
 
 end
