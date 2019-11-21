@@ -1,4 +1,3 @@
-class StandardDeviation
   ages = [24, 30, 18, 20, 41]
 
   sum = ages.sum
@@ -26,7 +25,6 @@ class StandardDeviation
     p square_root
 
 
-end
 
 
 # Your code here for calculating the standard deviation
