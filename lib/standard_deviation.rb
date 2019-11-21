@@ -17,8 +17,13 @@ class StandardDeviation
       x.round(2)
     end
 
+    sum_of_squared_numbers = squared_numbers.sum
 
-  p squared_numbers
+    divide = sum_of_squared_numbers / ages.length
+
+    square_root = Math.sqrt(divide).round(2)
+
+    p square_root
 
 
 end
